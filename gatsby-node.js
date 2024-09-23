@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
+const express = require('express');
 
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
@@ -15,4 +16,11 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+
+  
 }
+
+//Required as per https://tina.io/docs/frameworks/gatsby/#allowing-static-adminindexhtml-file-in-dev-mode
+exports.onCreateDevServer = ({ app }) => {
+  app.use('/admin', express.static('public/admin'));
+};
