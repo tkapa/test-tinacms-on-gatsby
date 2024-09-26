@@ -17,7 +17,7 @@ export default defineConfig({
   token: process.env.TINA_TOKEN,
   localContentPath: process.env.LOCAL_CONTENT_PATH,
 
-  branch: "sample-content",
+  branch: "tina/sample-content",
 
   build: {
     outputFolder: "admin",

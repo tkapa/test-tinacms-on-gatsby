@@ -27,14 +27,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/../fork/SSW.Rules.Content/posts`
+        path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'rules',
-        path: `${__dirname}/../fork/SSW.Rules.Content/rules`
+        path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
       }
     },
     `gatsby-transformer-sharp`,
