@@ -15,7 +15,7 @@ export default defineConfig({
 
   clientId: process.env.TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
-  localContentPath: process.env.LOCAL_CONTENT_PATH,
+  localContentPath: "../../SSW.Rules.Content",
 
   branch: "tina/sample-content",
 

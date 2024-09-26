@@ -23,20 +23,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'rules',
-        path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'posts',
+    //     path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
+    //   }
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'rules',
+    //     path: `${__dirname}/${process.env.LOCAL_CONTENT_RELATIVE_PATH}`
+    //   }
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
